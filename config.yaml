@@ -1,92 +1,78 @@
 baseurl: /
 title: mwgnd.
-theme: hugo-PaperMod
+theme: hugo-PaperModX
 ignoreFiles:
   - \.Rmd$
   - \.Rmarkdown$
   - _cache$
 
 
-enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
 enableEmoji: true
-pygmentsUseClasses: true
-
-
-minify:
-  disableXML: true
-  # minifyOutput: true
-
-menu:
-   main:
-      - name: About
-        url: /about/
-        weight: 5
-      - name: Archiv
-        url: /archives/
-        weight: 5
-      - name: Tags
-        url: /tags/
-        weight: 5
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  DateFormat: "January 2, 2006"
+  mainSections:
+    - post
 
-
+  # theme params
+  DisableLanguageSwitch: true
   defaultTheme: auto
-  # disableThemeToggle: true
-  ShowShareButtons: false
+  ShowToc: true
+  TocOpen: true
+  TocSide: right
+  EnableInstantClick: true
+  EnableImageZoom: true
   ShowReadingTime: true
-  #disableSpecial1stPost: true
+  ShowWordCount: true
+  ShowCodeCopyButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowRssButtonInSectionTermList: true
-  ShowAllPagesInArchive: true
-  ShowPageNums: true
-  ShowToc: true
-  comments: false
+  Email: lsy@mailbox.org
+
+  socialIcons:
+    - name: github-simple
+      url: "https://github.com/mwgnd"
+    - name: telegram-simple
+      url: "https://t.me/qwertzx"
+    - name: rss-simple
+      url: "feed.xml"
+    - name: email
+      url: email
+    
 
   homeInfoParams:
     Title: "are blogs still a thing in 2024?"
     Content: >
       This is just a personal blog of mine to share my journey in learning R,
       where i a am going to post my code snippets, documentation and other R related stuff.
-      I studied Social Sciences with a focus on computational social science and data analysis. 
+      I studied social sciences with a focus on computational social science and data analysis. 
       I have been using R for quite a while now and I am still learning new things every day 
       like building this blog with [**blogdown**](https://bookdown.org/yihui/blogdown/).
       I hope you will find this blog helpful.
 
-  socialIcons:
-    - name: github
-      title: View Github Profile
-      url: "https://github.com/mwgnd"
-    - name: email
-      title: Send an Email
-      url: "lsy@mailbox.org"
 
-  assets:
-    disableHLJS: true
- 
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
+
+menu:
+   main:
+      - name: About
+        url: /about/
+        weight: 1
+      - name: Tags
+        url: /tags/
+        weight: 2
+      - name: Archive
+        url: /archives/
+        weight: 3
+
+
 markup:
   goldmark:
     renderer:
       unsafe: true
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    codeFences: true
-    guessSyntax: true
-    #lineNos: true
-    #style: monokai
-
-
