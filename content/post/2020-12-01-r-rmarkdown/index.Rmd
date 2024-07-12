@@ -21,6 +21,7 @@ You can embed an R code chunk like this:
 summary(cars)
 fit <- lm(dist ~ speed, data = cars)
 fit
+print("test")
 ```
 
 # Including Plots

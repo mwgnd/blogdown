@@ -14,6 +14,8 @@ params:
   DateFormat: "January 2, 2006"
   mainSections:
     - post
+  
+  comments: true
 
   # theme params
   DisableLanguageSwitch: true
