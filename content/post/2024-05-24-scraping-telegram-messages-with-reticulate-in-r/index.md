@@ -13,7 +13,7 @@ tags:
 
 First post on this blogdown site. Hello World!
 
-As I write this, I have just finished my studies. In my master's thesis, I worked heavily with Telegram data because. As a social scientist interested in right-wing populist conspiracy discourse, I wanted to analyze the communication of far-right movements on Telegram. Although I am used to working with R for text analysis, I had to use Python for scraping the messages. For this purpose, I used the [Telethon](https://docs.telethon.dev/en/stable/) library for interacting with the Telegram API. But because I'm more into R, and wanted to use that in the first place, I recently tried scraping with the `reticulate` package in R. In this post, I will show you how to scrape Telegram messages using Telethon via `reticulate` in R. For easy switching between R and Python, I use R Markdown, where i also wrote this post.
+As I write this, I have just finished my studies. In my master's thesis, I worked heavily with Telegram data because, as a social scientist interested in right-wing populist conspiracy discourse, i wanted to analyze the communication of far-right movements on Telegram. Although I am used to working with R for text analysis, I had to use Python for scraping the messages. For this purpose, I used the [Telethon](https://docs.telethon.dev/en/stable/) library for interacting with the Telegram API. But because I'm more into R, and wanted to use that in the first place, I recently tried scraping with the `reticulate` package in R. In this post, I will show you how to scrape Telegram messages using Telethon via `reticulate` in R. For easy switching between R and Python, I use R Markdown, where i also wrote this post.
 
 # Setup reticulate
 
